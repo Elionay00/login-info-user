@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Tela de Login</title>
 </head>
+
 <body>
 
+  <div class="login-container">
 
-    <div class="login-container">
+    <form id="login-form" class="login-form" novalidate>
 
-        <form id="loginForm" class="login-form" novalidate>
-        
-        <h2>Login</h2>
-        
-        <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu email..." <small class="error-message">Por favor, insira um email válido.</small>
-        </div>
-        <div class="form-group">
-            <label for="password">senha:</label>
-            <input type="password" id="password" placeholder="Digite sua senha ">
-            <small> class="error-message"> a senha deve ter no minimo 6 caracteres</small>
-        </div>
-        <button type="submit" class="Login-button">Enviar</button>
-        
-        </form>
+      <h2>Login</h2>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
+        <small class="error-message">Por favor, insira um email válido.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" minlength="6" required>
+        <small class="error-message">A senha deve ter no mínimo 6 caracteres.</small>
+      </div>
+
+      <button type="submit" class="login-button">Enviar</button>
+
+    </form>
+
+  </div>
+
 </body>
 </html>
